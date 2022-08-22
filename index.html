@@ -14,28 +14,28 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Weather App</title>
   </head>
-  <body>
-    <section id="main">
-      <div>
-        <h1>Weather App</h1>
+  <body>    
+    <div>
+      <div id="main"  class="text-center text-white">
+        <h1 class="display-2 ">Weather App</h1><br>
+        <div id="test">
+        <input type="text" placeholder="Search for a city" id="input1" autofocus />
+        <button onclick="getWheather()" class="btn btn-danger">Search</button>
       </div>
-    </section>
-    <section id="check">
-      <div>
-        <input type="text" placeholder="Enter city name" id="input" />
-        <button onclick="getWheather()">Search</button>
-      </div>
-    </section>
-    <section id="result">
-      <div id="weather">
-        <div id="city"></div>
-        <div id="temp"></div>
-        <div id="icon"></div>
+      </div>    
+      <br><br>
+      <div id="result"  class="text-white text-center">
+        <h1 id="temp" class="display-3"></h1>
+        <p id="icon"></p>
+        <div id="humidity"></div>
+        <div id="wind"></div>
         <div id="description"></div>
+        <h2 id="city"></h2>
         <small id="date"></small>
       </div>
-    </section>
+  
 
+      </div>
     <script type="text/JavaScript" src="./script.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script
